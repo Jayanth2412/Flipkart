@@ -1,0 +1,3518 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{ 
+    position: fixed;
+    width:100%;
+    height: 56px;
+    background-color: #2874f0;
+    color:black;
+    z-index: 1;
+}
+.navbar .flipkart{
+    width: 74px;
+    height: 20px;
+    position: absolute;
+    left:14.5%;
+    top: 17%;
+    cursor: pointer;
+}
+.navbar .plus{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 19%;
+    top: 55%;
+    cursor: pointer;  
+}
+.navbar h6{
+    font-family:arial;
+    font-size: 9.4px;
+    line-height: 10px;
+    position: absolute;
+    left:14.58%;
+    top: 57%;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+}
+.navbar p{
+    font-family:arial;
+    font-size: 9.4px;
+    line-height: 10px;
+    position: absolute;
+    left: 110%;
+    top: 5%;
+    color: #ffe11b;
+    cursor: pointer;
+}
+.navbar h6:hover{
+    text-decoration: underline;
+}
+.navbar h6:hover p{
+    text-decoration: underline;
+}
+.navbar .dropdown .search-input{
+    display: flex;
+    border: none;
+    position: absolute;
+    left:21.23%;
+    top: 18%;
+    width: 38.8%;
+    height: 36px;
+    background-color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    border-radius: 1px;
+    cursor:text;
+    box-shadow: 0.5px 0.5px 2px;
+}
+.menu-button{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 22%;
+    top: 80%;
+    height: 10px;
+    width: 36%;
+    cursor: pointer;
+}
+.right-menu{
+    display: inline-block;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    left: 21.23%;
+    top: 83.1%;
+    background-color: #fff;
+    width:38.8%;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+.right-menu:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu li{
+    list-style: none;
+    padding: 8px 44px;
+}
+.dropdown-menu li:hover{
+    background-color: #f4fff6;
+    opacity: 1;
+}
+.dropdown-menu h5{
+    font-family: arial;
+    font-size: 12px;
+    font-weight: lighter;
+    position: absolute;
+    top:14px;
+    left:17.5px;
+    color: #666;
+}
+.dropdown-menu img{
+    position: absolute;
+    left: 12px;
+    width: 13px;
+    height: 13px;
+    padding: 4px 6px;
+    cursor: pointer;
+}
+.dropdown-menu li a{
+display: block;
+text-decoration: none;
+color: black;
+padding: 3px 7px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+}
+.navbar .search{
+    width:17px;
+    height: 17px;
+    position: absolute;
+    left: 57.6%;
+    top:33%;
+    cursor: pointer;
+}
+.login-menu{
+    display: inline-block;
+}
+.login-menu .login{
+    position: absolute;
+    left:64.5%;
+    top:21%;
+    width:9.5%;
+    height: 31.5px;
+    background-color: #fff;
+    color: #2874f0;
+    border-radius: 1px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 1;
+}
+.login-menu .login-dropdown{
+    display:none;
+    width: 18.5%;
+    position: absolute;
+    left: 60%;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.login-menu .login-dropdown li{
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 13.5px;
+    padding: 9px 20px;
+    padding-top: 20px;
+    cursor: pointer;
+   
+}
+.login-menu .login-dropdown li:hover{
+    background-color: #fafafa;
+    opacity: 1;
+}
+.login-menu:hover .login-dropdown{
+   display: block;
+}
+.point-arrow{
+    position: absolute;
+    left: 50%;
+    top: -3%;
+    width: 13px;
+    height: 13px;
+}
+
+.login-menu .login-dropdown li img{
+    position: absolute;
+    left: 12px;
+    width: 13px;
+    height: 13px;
+    padding: 6px 6px;
+    cursor: pointer;
+}
+.login-menu .login-dropdown li a{
+display: block;
+text-decoration: none;
+color: black;
+padding: 3px 30px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+cursor: pointer;
+    
+}
+.more-menu .more{
+    font-family: arial;
+    font-size: 16px;
+    padding: 20px 20px;
+    position: absolute;
+    top: 2%;
+    left: 75.75%;
+    width: 6%;
+    height: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.more-menu .more-dropdown{
+    display:none;
+    width: 19%;
+    position: absolute;
+    left: 69%;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.more-menu .more-dropdown li{
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 13.5px;
+    padding: 9px 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.more-menu .more-dropdown li:hover{
+background-color: #fafafa;
+    opacity: 1;
+}
+.more-menu:hover .more-dropdown {
+    display: block;
+}
+
+.point-drop{
+    position: absolute;
+    left: 50%;
+    top: -3%;
+    width: 13px;
+    height: 13px;
+}
+
+.more-menu .more-dropdown li img{
+    position: absolute;
+    left: 12px;
+    width: 13px;
+    height: 13px;
+    padding: 5px 6px;
+    cursor: pointer;
+}
+.more-menu .more-dropdown li a{
+display: block;
+text-decoration: none;
+color: black;
+padding: 3px 25px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+cursor: pointer;
+}
+.navbar .arrow{
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 64%;
+    left:80.3%;
+    cursor: pointer;
+}
+
+.more-menu:hover .arrow{
+    transform: rotate(180deg);
+}
+
+.arrow:hover .more-dropdown {
+    display: block;
+}
+
+.navbar .cart{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 84.5%;
+    top:38%;
+    cursor: pointer;
+}
+.navbar text{
+    font-family: arial;
+    position: absolute;
+    top: 40%;
+    left: 86.4%;
+    width: 3%;
+    height: 18px;
+    color: #fff;
+    background-color: #2874f0;
+    cursor: pointer;
+}
+
+.application{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 56px;
+    width:100%;
+    height:110px;
+    background-color: #fff;
+    color:black;
+}
+.topoffers img{
+   width: 64px;
+   height: 64px; 
+   position: absolute;
+   left: 28px;
+   top: 68px;
+   cursor: pointer;
+}
+.topoffers label{
+    position: absolute;
+    left: 28px;
+    top: 138px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.topoffers label:hover{
+    color: #2874f0;
+}
+.grocery img{
+    width: 64px;
+    height: 64px; 
+    position: absolute;
+    left: 12.45%;
+    top: 68px;
+    cursor: pointer;
+ }
+ .grocery label{
+     position: absolute;
+     left: 13%;
+     top: 138px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+ .grocery label:hover{
+     color: #2874f0;
+ }
+ .mobiles img{
+    width: 64px;
+    height: 64px; 
+    position: absolute;
+    left: 22.7%;
+    top: 68px;
+    cursor: pointer;
+    z-index: 0;
+ }
+ .mobiles label{
+     position: absolute;
+     left: 23.4%;
+     top: 138px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+     cursor: pointer;
+     z-index: 0;
+ }
+ .mobiles label:hover{
+     color: #2874f0;
+ }
+ .fashion img{
+    width: 64px;
+    height: 64px; 
+    position: absolute;
+    left: 33%;
+    top: 68px;
+    cursor: pointer;
+ }
+ .fashion label{
+     position: absolute;
+     left: 33%;
+     top: 138px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+ .fashion h5{
+    width: 6px;
+    height: 6px;
+    transform: rotate(180deg);
+    margin: 90px 0 0 55px;
+    padding: 0 0 0 5px;
+}
+ /*.fashion .downarrow{
+     width: 7.5px;
+     height: 7.5px;
+     position: absolute;
+     left: 37.4%;
+     top:143px;
+}*/
+ .fashion:hover{
+     color: #2874f0;
+ }
+ .fashion:hover h5{
+    transform: rotate(0);
+    transition: 0.1s;
+}
+.fashion:hover h5{
+   margin: 85px 0 0 46px;
+}
+ .electronics img{
+    width: 64px;
+    height: 64px; 
+    position: absolute;
+    left: 44%;
+    top: 68px;
+    cursor: pointer;
+ }
+ .electronics label{
+     position: absolute;
+     left: 43.3%;
+     top: 138px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+ .electronics h5{
+     width: 6px;
+     height: 6px;
+     transform: rotate(180deg);
+     margin: 90px 0 0 65px;
+     padding: 0 0 0 5px;
+ }
+ /*
+ .electronics .downarrow1{
+    width: 7.5px;
+    height: 7.5px;
+    position: absolute;
+    left: 49.5%;
+    top:143px;
+}*/
+ .electronics:hover{
+     color: #2874f0;
+ }
+ .electronics:hover h5{
+     transform: rotate(0);
+     transition: 0.1s;
+ }
+ .electronics:hover h5{
+    margin: 85px 0 0 56px;
+ }
+ .home img{
+    width: 64px;
+    height: 64px; 
+    position: absolute;
+    left: 54.9%;
+    top: 68px;
+    cursor: pointer;
+ }
+ .home label{
+     position: absolute;
+     left: 55.5%;
+     top: 138px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+ .home h5{
+    width: 6px;
+    height: 6px;
+    transform: rotate(180deg);
+    margin: 90px 0 0 45px;
+    padding: 0 0 0 5px;
+}
+ /*.home .downarrow2{
+    width: 7.5px;
+    height: 7.5px;
+    position: absolute;
+    left: 58.8%;
+    top:143px;
+}*/
+ .home:hover{
+     color: #2874f0;
+ }
+ .home:hover h5{
+    transform: rotate(0);
+    transition: 0.1s;
+}
+.home:hover h5{
+   margin: 85px 0 0 35px;
+}
+ .appliances img{
+    width: 64px;
+    height: 64px; 
+    position: absolute;
+    left: 65.9%;
+    top: 68px;
+    cursor: pointer;
+ }
+ .appliances label{
+     position: absolute;
+     left: 65.2%;
+     top: 138px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+ .appliances h5{
+    width: 6px;
+    height: 6px;
+    transform: rotate(180deg);
+    margin: 90px 0 0 58px;
+    padding: 0 0 0 5px; 
+ }
+ /*.appliances .downarrow3{
+    width: 7.5px;
+    height: 7.5px;
+    position: absolute;
+    left: 71%;
+    top:143px;
+}*/
+ .appliances:hover{
+     color: #2874f0;
+ }
+ .appliances:hover h5{
+    transform: rotate(0);
+    transition: 0.1s;
+}
+.appliances:hover h5{
+   margin: 85px 0 0 48px;
+}
+ .travel img{
+    width: 64px;
+    height: 64px; 
+    position: absolute;
+    left: 76.85%;
+    top: 68px;
+    cursor: pointer;
+ }
+ .travel label{
+     position: absolute;
+     left: 77.95%;
+     top: 138px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+ .travel label:hover{
+     color: #2874f0;
+ }
+ .beautytoys img{
+    width: 64px;
+    height: 64px; 
+    position: absolute;
+    left: 89.9%;
+    top: 68px;
+    cursor: pointer;
+ }
+ .beautytoys label{
+     position: absolute;
+     left: 87%;
+     top: 138px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+ .beautytoys h5{
+    width: 6px;
+    height: 6px;
+    transform: rotate(180deg);
+    margin: 90px 0 0 110px;
+    padding: 0 0 0 5px;  
+ }
+ /*.beautytoys .downarrow4{
+    width: 7.5px;
+    height: 7.5px;
+    position: absolute;
+    left: 97.3%;
+    top:143px;
+}*/
+ .beautytoys:hover{
+     color: #2874f0;
+ }
+ .beautytoys:hover h5{
+    transform: rotate(0);
+    transition: 0.1s;
+}
+.beautytoys:hover h5{
+   margin: 85px 0 0 100px;
+}
+.container{
+    display:grid;
+    background-color: #f0f0f0;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 0.5rem;
+   grid-template-rows: 0.8fr 1fr 0.7fr 1fr 1fr 1fr 1fr 0.7fr 0.3fr 1fr 1fr;
+   grid-gap: 0.7rem;
+   }
+
+
+.container .advertisement{
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 100%;
+    height: 280px;
+    color:black;
+    background-color: #fff;
+}
+.container .advertisement img{
+    width: 100%;
+    height: 280px;
+    cursor: pointer;
+
+}
+
+.container .deals{
+    grid-column: 1/2;
+    grid-row: 2;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-columns: 4.4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0.65rem;
+}
+.deals1{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-gap: 1.5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.deals1 .deals-of-the-day{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #fff;
+}
+.deals1 .deals-of-the-day label{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 22px;
+   font-weight: bold;
+   opacity: 0.9;
+   position: relative;
+   left: 2%;
+   top:20%; 
+   cursor: text;
+}
+.deals1 .deals-of-the-day button{
+    width: 95px;
+    height: 37px;
+    color: #fff;
+    background-color: #2874f0;
+    border-radius: 2px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-weight: bold;
+    position: relative;
+    top: 20%;
+    left: 66%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.deals1 .deals-of-the-day1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+    background-color: #fff; 
+    cursor: pointer;
+}
+.dealsday1{
+    grid-column: 1/2;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.dealsday1 img{
+    width:150px;
+    height: 150px;
+    position: relative;
+    top: 10%;
+    transition: 0.1s;
+}
+.dealsday1:hover img{
+transform: scale(1.05); 
+}
+.dealsday1 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;
+    top: 14%;
+    left: 30%;
+}
+.dealsday1 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 17%;
+    left: 21%;
+}
+.dealsday1 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 20%;
+    left: 18%;
+    opacity: .6;
+}
+.dealsday2{
+    grid-column: 2/3;
+    grid-row: 1;
+    justify-self: center; 
+}
+.dealsday2 img{
+    width:150px;
+    height: 150px;
+    position: relative;
+    top: 10%;
+    transition: 0.1s;
+}
+.dealsday2:hover img{
+    transform: scale(1.05); 
+    }
+.dealsday2 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 14%;
+    left: 25%;
+}
+.dealsday2 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 17%;
+    left: 25%;
+}
+.dealsday2 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 20%;
+    left: 22%;
+    opacity: .6; 
+}
+.dealsday3{
+    grid-column: 3/4;
+    grid-row: 1;
+    justify-self: center; 
+}
+.dealsday3 img{
+    width:150px;
+    height: 90px;
+    position: relative;
+    top: 20%;
+    transition: 0.1s;
+}
+.dealsday3:hover img{
+    transform: scale(1.05); 
+    }
+
+.dealsday3 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;
+    top: 34.5%;
+    left: 10%;
+}
+.dealsday3 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 37.5%;
+    left: 25%;  
+}
+.dealsday3 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 40%;
+    left: 31%;
+    opacity: .6;
+}
+.dealsday4{
+    grid-column: 4/5;
+    grid-row: 1;
+    justify-self: center; 
+}
+.dealsday4 img{
+    width:150px;
+    height: 150px;
+    position: relative;
+    top: 10%;
+    transition: 0.1s;
+}
+.dealsday4:hover img{
+    transform: scale(1.05); 
+    }
+.dealsday4 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 14%;
+    left: 21%;
+}
+.dealsday4 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 17%;
+    left: 27%;
+}
+.dealsday4 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 20%;
+    left: 12%;
+    opacity: .6; 
+}
+.dealsday5{
+    grid-column: 5/6;
+    grid-row: 1;
+    justify-self: center; 
+}
+.dealsday5 img{
+    width:150px;
+    height: 150px;
+    position: relative;
+    top: 10%;
+    transition: 0.1s;
+}
+.dealsday5:hover img{
+    transform: scale(1.05); 
+    }
+.dealsday5 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 14%;
+    left: 21%;
+}
+.dealsday5 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 17%;
+    left: 20%;
+}
+.dealsday5 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 20%;
+    left: 22%;
+    opacity: .6;
+}
+.deals2{
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.deals2 img{
+    width: 223px;
+    height: 340px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.adver2{
+    grid-column: 1/2;
+    grid-row: 3;
+    width:100%;
+    height: 250px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0.8rem;
+    color:black;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.advers1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #f0f0f0;
+}
+.advers1 img{
+    width: 415px;
+    height: 250px;
+    position: relative;
+    top: 2px;
+}
+.advers2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #f0f0f0;
+}
+.advers2 img{
+    width: 415px;
+    height: 250px;
+    position: relative;
+    top: 2px;
+}
+.advers3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: #f0f0f0;
+}
+.advers3 img{
+    width: 415px;
+    height: 250px;
+    position: relative;
+    top: 2px;
+}
+.topfashion-deal{
+    grid-column: 1/2;
+    grid-row: 4;
+    width:100%;
+    height: 350px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: 1fr;
+    color:black;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.fashiondeal1{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: #fff;
+}
+.fashiondeal1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;  
+    top: 22%;
+    left: 4%;
+}
+.fashiondeal1 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;  
+    top: 26%;
+    left: 32%;  
+}
+.fashiondeal1 button{
+    width: 95px;
+    height: 37px;
+    color: #fff;
+    background-color: #2874f0;
+    border-radius: 2px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-weight: bold;
+    position: relative;
+    top: 33.7%;
+    left: 28%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    cursor: pointer; 
+}
+.fashiondeal1 img{
+    width:234px;
+    height: 127px;
+    position: relative;
+    top:35%;
+    left: 0%;
+    
+}
+.fashiondeal2{
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: #fff; 
+    cursor: pointer; 
+}
+.fashiondeal2 img{
+    width:150px;
+    height: 200px;
+    position: relative;
+    top:6%;
+    left:17%;
+    transition: 0.1s;
+}
+.fashiondeal2:hover img{
+    transform: scale(1.05); 
+    }
+.fashiondeal2 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 10%;
+    left: 14%;  
+}
+.fashiondeal2 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 13%;
+    left: 32%; 
+}
+.fashiondeal2 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 16%;
+    left: 22%;
+    opacity: .6;
+}
+.fashiondeal3{
+    grid-column: 3/4;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.fashiondeal3 img{
+    width:180px;
+    height: 200px;
+    position: relative;
+    top:6%;
+    left:11%; 
+    transition: 0.1s;
+}
+.fashiondeal3:hover img{
+    transform: scale(1.05); 
+    }
+.fashiondeal3 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 10%;
+    left: 10%;  
+}
+.fashiondeal3 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 13%;
+    left: 34%; 
+}
+.fashiondeal3 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 16%;
+    left: 13%;
+    opacity: .6;
+}
+.fashiondeal4{
+    grid-column: 4/5;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.fashiondeal4 img{
+    width:200px;
+    height: 120px;
+    position: relative;
+    top:18%;
+    left:8%; 
+    transition: 0.1s;
+}
+.fashiondeal4:hover img{
+    transform: scale(1.05); 
+    }
+.fashiondeal4 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 33%;
+    left: 12%;  
+}
+.fashiondeal4 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 36%;
+    left: 34%; 
+}
+.fashiondeal4 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 39%;
+    left: 11%;
+    opacity: .6;
+}
+.fashiondeal5{
+    grid-column: 5/6;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.fashiondeal5 img{
+    width:150px;
+    height: 200px;
+    position: relative;
+    top:6%;
+    left:17%; 
+    transition: 0.1s;
+}
+.fashiondeal5:hover img{
+    transform: scale(1.05); 
+    }
+.fashiondeal5 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 10%;
+    left: 22%;  
+}
+.fashiondeal5 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 13%;
+    left: 31%; 
+}
+.fashiondeal5 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 16%;
+    left: 36%;
+    opacity: .6;
+}
+.fashiondeal6{
+    grid-column: 6/7;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.trendingoffers{
+    grid-column: 1/2;
+    grid-row: 5;
+    width:100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: 1fr;
+    color:black;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.trendingoffer1{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: #fff;
+}
+.trendingoffer1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;  
+    top: 34%;
+    left: 6%;
+}
+.trendingoffer1 button{
+    width: 95px;
+    height: 37px;
+    color: #fff;
+    background-color: #2874f0;
+    border-radius: 2px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-weight: bold;
+    position: relative;
+    top: 42.5%;
+    left: 28%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.trendingoffer1 img{
+    width:234px;
+    height: 127px;
+    position: relative;
+    top: 44%;
+    left: 0%; 
+}
+.trendingoffer2{
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.trendingoffer2 img{
+    width:200px;
+    height: 150px;
+    position: relative;
+    top:14%;
+    left:4%; 
+    transition: 0.1s;
+}
+.trendingoffer2:hover img{
+    transform: scale(1.05); 
+    }
+.trendingoffer2 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 25%;
+    left: 20%;  
+}
+.trendingoffer2 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 28%;
+    left: 34%; 
+}
+.trendingoffer2 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 31%;
+    left: 36%;
+    opacity: .6;
+}
+.trendingoffer3{
+    grid-column: 3/4;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.trendingoffer3 img{
+    width:70px;
+    height: 200px;
+    position: relative;
+    top:7%;
+    left:30%; 
+    transition: 0.1s;
+}
+.trendingoffer3:hover img{
+    transform: scale(1.05); 
+    }
+.trendingoffer3 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 28%;  
+}
+.trendingoffer3 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 25%; 
+}
+.trendingoffer3 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    opacity: .6;
+}
+.trendingoffer4{
+    grid-column: 4/5;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.trendingoffer4 img{
+    width:200px;
+    height: 150px;
+    position: relative;
+    top:14%;
+    left:4%; 
+    transition: 0.1s;
+}
+.trendingoffer4:hover img{
+    transform: scale(1.05); 
+    }
+.trendingoffer4 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 25%;
+    left: 25%;  
+}
+.trendingoffer4 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 28%;
+    left: 36%; 
+}
+.trendingoffer4 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 31%;
+    left: 32%;
+    opacity: .6;
+}
+.trendingoffer5{
+    grid-column: 5/6;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.trendingoffer5 img{
+    width:200px;
+    height: 150px;
+    position: relative;
+    top:14%;
+    left:4%; 
+    transition: 0.1s;
+}
+.trendingoffer5:hover img{
+    transform: scale(1.05); 
+    }
+.trendingoffer5 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 25%;
+    left: 31%;  
+}
+.trendingoffer5 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 28%;
+    left: 33%; 
+}
+.trendingoffer5 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 31%;
+    left: 28%;
+    opacity: .6;
+}
+.trendingoffer6{
+    grid-column: 6/7;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.furniture{
+    grid-column: 1/2;
+    grid-row: 6;
+    width:100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: 1fr;
+    color:black;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.furnituredeal1{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: #fff;
+}
+.furnituredeal1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;  
+    top: 22%;
+    left: 18%;
+}
+.furnituredeal1 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;  
+    top: 26%;
+    left: 24%;  
+}
+.furnituredeal1 button{
+    width: 95px;
+    height: 37px;
+    color: #fff;
+    background-color: #2874f0;
+    border-radius: 2px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-weight: bold;
+    position: relative;
+    top: 33.7%;
+    left: 28%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    cursor: pointer; 
+}
+.furnituredeal1 img{
+    width:234px;
+    height: 127px;
+    position: relative;
+    top:35%;
+    left: 0%;
+}
+.furnituredeal2{
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.furnituredeal2 img{
+    width:190px;
+    height: 200px;
+    position: relative;
+    top:7%;
+    left:8%;
+    transition: 0.1s;
+}
+.furnituredeal2:hover img{
+    transform: scale(1.05); 
+    }
+.furnituredeal2 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 22%;  
+}
+.furnituredeal2 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 30%; 
+}
+.furnituredeal2 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 14%;
+    opacity: .6;
+}
+.furnituredeal3{
+    grid-column: 3/4;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.furnituredeal3 img{
+    width:200px;
+    height: 200px;
+    position: relative;
+    top:7%;
+    left:7%;
+    transition: 0.1s;
+}
+.furnituredeal3:hover img{
+    transform: scale(1.05); 
+    }
+.furnituredeal3 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 22%;  
+}
+.furnituredeal3 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 33%; 
+}
+.furnituredeal3 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 24%;
+    opacity: .6;
+}
+.furnituredeal4{
+    grid-column: 4/5;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.furnituredeal4 img{
+    width:200px;
+    height: 200px;
+    position: relative;
+    top:7%;
+    left:7%;
+    transition: 0.1s;
+}
+.furnituredeal4:hover img{
+    transform: scale(1.05); 
+    }
+.furnituredeal4 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 27%;  
+}
+.furnituredeal4 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 32%; 
+}
+.furnituredeal4 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 16%;
+    opacity: .6;
+}
+.furnituredeal5{
+    grid-column: 5/6;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.furnituredeal5 img{
+    width:200px;
+    height: 200px;
+    position: relative;
+    top:7%;
+    left:7%;
+    transition: 0.1s;
+}
+.furnituredeal5:hover img{
+    transform: scale(1.05); 
+    }
+.furnituredeal5 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 36%;  
+}
+.furnituredeal5 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 27%; 
+}
+.furnituredeal5 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 11%;
+    opacity: .6;
+}
+.furnituredeal6{
+    grid-column: 6/7;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.topdealselctronics{
+    grid-column: 1/2;
+    grid-row: 7;
+    width:100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: 1fr;
+    color:black;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.electronicsdeal1{
+grid-column: 1/2;
+grid-row: 1;
+background-color: #fff;
+}
+.electronicsdeal1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;  
+    top: 22%;
+    left: 5%;
+}
+.electronicsdeal1 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;  
+    top: 24%;
+    left: 14%; 
+}
+.electronicsdeal1 button{
+    width: 95px;
+    height: 37px;
+    color: #fff;
+    background-color: #2874f0;
+    border-radius: 2px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-weight: bold;
+    position: relative;
+    top: 33.7%;
+    left: 28%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    cursor: pointer; 
+}
+.electronicsdeal1 img{
+    width:234px;
+    height: 127px;
+    position: relative;
+    top:35%;
+    left: 0%;
+}
+.electronicsdeal2{
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.electronicsdeal2 img{
+    width:200px;
+    height: 200px;
+    position: relative;
+    top:6%;
+    left:5%;
+    transition: 0.1s;
+}
+.electronicsdeal2:hover img{
+    transform: scale(1.05); 
+    }
+.electronicsdeal2 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 25%;  
+}
+.electronicsdeal2 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 32%; 
+}
+.electronicsdeal2 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 25%;
+    opacity: .6;
+}
+.electronicsdeal3{
+    grid-column: 3/4;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.electronicsdeal3 img{
+    width:120px;
+    height: 200px;
+    position: relative;
+    top:6%;
+    left:25%;
+    transition: 0.1s;
+}
+.electronicsdeal3:hover img{
+    transform: scale(1.05); 
+    }
+.electronicsdeal3 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 31%;  
+}
+.electronicsdeal3 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 30%; 
+}
+.electronicsdeal3 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 20%;
+    opacity: .6;
+}
+.electronicsdeal4{
+    grid-column: 4/5;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.electronicsdeal4 img{
+    width:120px;
+    height: 200px;
+    position: relative;
+    top:6%;
+    left:20%;
+    transition: 0.1s;
+}
+.electronicsdeal4:hover img{
+    transform: scale(1.05); 
+    }
+.electronicsdeal4 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 5%;  
+}
+.electronicsdeal4 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 32%; 
+}
+.electronicsdeal4 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 33%;
+    opacity: .6;
+}
+.electronicsdeal5{
+    grid-column: 5/6;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.electronicsdeal5 img{
+    width:200px;
+    height: 160px;
+    position: relative;
+    top:12%;
+    left:8%;
+    transition: 0.1s;
+}
+.electronicsdeal5:hover img{
+    transform: scale(1.05); 
+    }
+.electronicsdeal5 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 22%;
+    left: 22%;  
+}
+.electronicsdeal5 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 25%;
+    left: 26%; 
+}
+.electronicsdeal5 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 28%;
+    left: 26%;
+    opacity: .6;
+}
+.electronicsdeal6{
+    grid-column: 6/7;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.dailychores{
+    grid-column: 1/2;
+    grid-row: 8;
+    width:100%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:0.8rem;
+    color:black;
+    background-color: #f0f0f0;
+}
+.choresad1{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.choresad1 img{
+    width: 395px;
+    height: 230px;
+    padding-top: 12px;
+    padding-left: 10px;
+    transition: 0.2s;
+}
+.choresad1 img:hover{
+transform: scale(1.03);
+}
+.choresad2{
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.choresad2 img{
+    width: 395px;
+    height: 230px;
+    padding-top: 12px;
+    padding-left: 10px;
+    transition: 0.2s;
+}
+.choresad2 img:hover{
+transform: scale(1.03);
+}
+.choresad3{
+    grid-column: 3/4;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.choresad3 img{
+    width: 395px;
+    height: 230px;
+    padding-top: 12px;
+    padding-left: 10px;
+    transition: 0.2s;
+}
+.choresad3 img:hover{
+transform: scale(1.03);
+}
+.bestadver{
+    grid-column: 1/2;
+    grid-row: 9;
+    width:100%;
+    height: 130px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0.6rem;
+    color:black;
+    background-color: #f0f0f0;
+}
+.under299{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.under299 img{
+    width:96%;
+    height: 115px;
+    padding-left: 6px;
+    padding-top: 7px;
+    border-radius: 15px;
+}
+.under499{
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.under499 img{
+    width:96%;
+    height: 115px;
+    padding-left: 6px;
+    padding-top: 7px;
+    border-radius: 15px;
+}
+.under599{
+    grid-column: 3/4;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.under599 img{
+    width:96%;
+    height: 115px;
+    padding-left: 6px;
+    padding-top: 7px;
+    border-radius: 15px;
+}
+.under699{
+    grid-column: 4/5;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.under699 img{
+    width:96%;
+    height: 115px;
+    padding-left: 6px;
+    padding-top: 7px;
+    border-radius: 15px;
+}
+.discount{
+    grid-column: 1/2;
+    grid-row: 10;
+    width:100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: 1fr;
+    color:black;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.beautytoy1{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: #fff;
+}
+.beautytoy1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;  
+    top: 22%;
+    left: 6%;
+}
+.beautytoy1 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;  
+    top: 24%;
+    left: 33%;   
+}
+.beautytoy1 button{
+    width: 95px;
+    height: 37px;
+    color: #fff;
+    background-color: #2874f0;
+    border-radius: 2px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-weight: bold;
+    position: relative;
+    top: 33.7%;
+    left: 28%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    cursor: pointer; 
+}
+.beautytoy1 img{
+    width:234px;
+    height: 127px;
+    position: relative;
+    top:35%;
+    left: 0%;
+}
+.beautytoy2{
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.beautytoy2 img{
+    width:150px;
+    height: 200px;
+    position: relative;
+    top:7%;
+    left:15%;
+    transition: 0.1s;
+}
+.beautytoy2:hover img{
+    transform: scale(1.05); 
+    }
+.beautytoy2 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 32%;  
+}
+.beautytoy2 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 28%; 
+}
+.beautytoy2 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 16%;
+    opacity: .6;
+}
+.beautytoy3{
+    grid-column: 3/4;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.beautytoy3 img{
+    width:90px;
+    height: 200px;
+    position: relative;
+    top:7%;
+    left:28%;
+    transition: 0.1s;
+}
+.beautytoy3:hover img{
+    transform: scale(1.05); 
+    }
+.beautytoy3 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 32%;  
+}
+.beautytoy3 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 26%; 
+}
+.beautytoy3 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 30%;
+    opacity: .6;
+}
+.beautytoy4{
+    grid-column: 4/5;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.beautytoy4 img{
+    width:200px;
+    height: 140px;
+    position: relative;
+    top:17%;
+    left:9%;
+    transition: 0.1s;
+}
+.beautytoy4:hover img{
+    transform: scale(1.05); 
+    }
+.beautytoy4 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 28%;
+    left: 35%;  
+}
+.beautytoy4 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 31%;
+    left: 26%; 
+}
+.beautytoy4 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 34%;
+    left: 21%;
+    opacity: .6;
+}
+.beautytoy5{
+    grid-column: 5/6;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.beautytoy5 img{
+    width:90px;
+    height: 200px;
+    position: relative;
+    top:7%;
+    left:28%;
+    transition: 0.1s;
+}
+.beautytoy5:hover img{
+    transform: scale(1.05); 
+    }
+.beautytoy5 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 18%;  
+}
+.beautytoy5 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 28%; 
+}
+.beautytoy5 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 34%;
+    opacity: .6;
+}
+.beautytoy6{
+    grid-column: 6/7;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.essentials{
+    grid-column: 1/2;
+    grid-row: 11;
+    width:100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: 1fr;
+    color:black;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.homeessence1{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: #fff;
+}
+.homeessence1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 31%;
+}
+.homeessence1 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;  
+    top: 14%;
+    left: 15%;   
+}
+.homeessence1 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;  
+    top: 17%;
+    left: 33%;
+}
+.homeessence1 button{
+    width: 95px;
+    height: 37px;
+    color: #fff;
+    background-color: #2874f0;
+    border-radius: 2px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-weight: bold;
+    position: relative;
+    top: 25%;
+    left: 28%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    cursor: pointer; 
+}
+.homeessence1 img{
+    width:234px;
+    height: 127px;
+    position: relative;
+    top: 26%;
+    left: 0%;
+}
+.homeessence2{
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.homeessence2 img{
+    width:180px;
+    height: 200px;
+    position: relative;
+    top:7%;
+    left:11%;
+    transition: 0.1s;
+}
+.homeessence2:hover img{
+    transform: scale(1.05); 
+    }
+.homeessence2 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 23%;  
+}
+.homeessence2 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 34%; 
+}
+.homeessence2 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 36%;
+    opacity: .6;
+}
+.homeessence3{
+    grid-column: 3/4;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.homeessence3 img{
+    width:120px;
+    height: 200px;
+    position: relative;
+    top:7%;
+    left:25%;
+    transition: 0.1s;
+}
+.homeessence3:hover img{
+    transform: scale(1.05); 
+    }
+.homeessence3 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 32%;  
+}
+.homeessence3 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 27%; 
+}
+.homeessence3 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 32%;
+    opacity: .6;
+}
+.homeessence4{
+    grid-column: 4/5;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.homeessence4 img{
+    width:150px;
+    height: 200px;
+    position: relative;
+    top:7%;
+    left:15%;
+    transition: 0.1s;
+}
+.homeessence4:hover img{
+    transform: scale(1.05); 
+    }
+.homeessence4 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 35%;  
+}
+.homeessence4 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 33%; 
+}
+.homeessence4 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 29%;
+    opacity: .6;
+}
+.homeessence5{
+    grid-column: 5/6;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+.homeessence5 img{
+    width:150px;
+    height: 200px;
+    position: relative;
+    top:7%;
+    left:15%;
+    transition: 0.1s;
+}
+.homeessence5:hover img{
+    transform: scale(1.05); 
+    }
+.homeessence5 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    position: relative;  
+    top: 11%;
+    left: 34%;  
+}
+.homeessence5 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #388E3C;
+    position: relative;
+    top: 14%;
+    left: 34%; 
+}
+.homeessence5 h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #212121;
+    position: relative;
+    top: 17%;
+    left: 33%;
+    opacity: .6;
+}
+.homeessence6{
+    grid-column: 6/7;
+    grid-row: 1;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.topstories{
+    display:grid;
+    background-color: #f0f0f0;
+    padding-top: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 36px 100px 40px 20px 40px 40px 20px 120px 40px 60px 40px 40px;
+}
+.freespace1{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: #fff; 
+}
+.branddirectory{
+    grid-column: 1/2;
+    grid-row: 2;
+    background-color: #fff;
+}
+.branddirectory h2{
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #848484;
+}
+.mostsearched{
+    grid-column: 1/2;
+    grid-row: 3;
+    background-color: #fff;
+}
+.mostsearched h2{
+    margin-left: 25px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #848484;
+}
+.mobilestories{
+    grid-column: 1/2;
+    grid-row: 4;
+    background-color: #fff;
+}
+.mobilestories h2{
+    margin-left: 25px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #848484;
+}
+.camerastories{
+    grid-column: 1/2;
+    grid-row: 5;
+    background-color: #fff;
+}
+.camerastories h2{
+    margin-left: 25px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #848484;
+}
+.laptopstories{
+    grid-column: 1/2;
+    grid-row: 6;
+    background-color: #fff;
+}
+.laptopstories h2{
+    margin-left: 25px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #848484;
+}
+.tvstories{
+    grid-column: 1/2;
+    grid-row: 7;
+    background-color: #fff;
+}
+.tvstories h2{
+    margin-left: 25px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #848484;
+}
+.largeappliancestories{
+    grid-column: 1/2;
+    grid-row: 8;
+    background-color: #fff;
+}
+.largeappliancestories h2{
+    margin-left: 25px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #848484;
+}
+.clothingstories{
+    grid-column: 1/2;
+    grid-row: 9;
+    background-color: #fff;
+}
+.clothingstories h2{
+    margin-left: 25px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #848484;
+}
+.footstories{
+    grid-column: 1/2;
+    grid-row: 10;
+    background-color: #fff;
+}
+.footstories h2{
+    margin-left: 25px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #848484;
+}
+.grocerystories{
+    grid-column: 1/2;
+    grid-row: 11;
+    background-color: #fff;
+}
+.grocerystories h2{
+    margin-left: 25px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #848484;
+}
+.bestsellingstories{
+    grid-column: 1/2;
+    grid-row: 12;
+    background-color: #fff;
+}
+.bestsellingstories h2{
+    margin-left: 25px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #848484;
+}
+.furniturestories{
+    grid-column: 1/2;
+    grid-row: 13;
+    background-color: #fff;
+}
+.furniturestories h2{
+    margin-left: 25px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #848484;
+}
+
+.one-stop{
+    display: grid;
+    background-color: #f0f0f0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 170px 200px 80px 90px 80px 20px 110px 230px 90px 75px 110px 155px 80px 80px 80px;
+}
+.freespace23{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: #fff;
+}
+.destination{
+    grid-column: 1/2;
+    grid-row: 2;
+    background-color: #fff;
+}
+.destination h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.destination p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787;
+}
+.flipplus{
+    grid-column: 1/2;
+    grid-row: 3;
+    background-color: #fff;
+}
+.flipplus h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.flipplus p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787;
+}
+.nocostemi{
+    grid-column: 1/2;
+    grid-row: 4;
+    background-color: #fff;
+}
+.nocostemi h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.nocostemi p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787;
+}
+.emiondebit{
+    grid-column: 1/2;
+    grid-row: 5;
+    background-color: #fff;
+}
+.emiondebit h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.emiondebit p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787;
+}
+.mobileexchange{
+    grid-column: 1/2;
+    grid-row: 6;
+    background-color: #fff;
+}
+.mobileexchange h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.mobileexchange p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787;
+}
+.whatcanubuy{
+    grid-column: 1/2;
+    grid-row: 7;
+    background-color: #fff;
+}
+.whatcanubuy h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.mobphone1{
+    grid-column: 1/2;
+    grid-row: 8;
+    background-color: #fff;
+}
+.mobphone1 h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.mobphone1 p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787;
+}
+.elecdevices{
+    grid-column: 1/2;
+    grid-row: 9;
+    background-color: #fff;
+}
+.elecdevices h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.elecdevices p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787;
+}
+.larappli{
+    grid-column: 1/2;
+    grid-row: 10;
+    background-color: #fff;
+}
+.larappli h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.larappli p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787;
+}
+.smallhomeapp{
+    grid-column: 1/2;
+    grid-row: 11;
+    background-color: #fff;
+}
+.smallhomeapp h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.smallhomeapp p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787;
+}
+.lifestyle{
+    grid-column: 1/2;
+    grid-row: 12;
+    background-color: #fff;
+}
+.lifestyle h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.lifestyle p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787 
+}
+.homefur{
+    grid-column: 1/2;
+    grid-row: 13;
+    background-color: #fff;
+}
+.homefur h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.homefur p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787  
+}
+.babykids{
+    grid-column: 1/2;
+    grid-row: 14;
+    background-color: #fff;
+}
+.babykids h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.babykids p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787  
+}
+.booksportgame{
+    grid-column: 1/2;
+    grid-row: 15;
+    background-color: #fff;
+}
+.booksportgame h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.booksportgame p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787  
+}
+.grosupermarket{
+    grid-column: 1/2;
+    grid-row: 16;
+    background-color: #fff;
+}
+.grosupermarket h2{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #878787;
+}
+.grosupermarket p{
+    margin-left: 25px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #878787  
+}
+.lastpart{
+    width: 100%;
+    height:350px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1.1fr;
+    grid-gap:1px;
+    background-color: #717171;
+}
+.detailsflip{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #1c263b;
+    display: grid;
+    grid-template-columns: 2.4fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap:1px;
+    padding: 40px 65px 40px 65px;
+}
+.detailsp1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #1c263b;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:1px;
+}
+.aboutflip{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color:transparent;
+}
+.aboutflip p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 0 9px 0;
+    color: #878787;
+}
+.contactusflip{
+    color:#ffffff;
+    text-align: left;
+    line-height: 2;
+}
+.contactusflip h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;    
+}
+.contactusflip h1:hover{
+    text-decoration: underline;
+}
+.contactusflip h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.contactusflip h2:hover{
+    text-decoration: underline;
+}
+.contactusflip h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.contactusflip h3:hover{
+    text-decoration: underline;
+}
+.contactusflip h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.contactusflip h4:hover{
+    text-decoration: underline;
+}
+.contactusflip h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.contactusflip h5:hover{
+    text-decoration: underline;
+}
+.contactusflip h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.contactusflip h6:hover{
+    text-decoration: underline;
+}
+.contactusflip text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.contactusflip text:hover{
+    text-decoration: underline;
+}
+.helpflip{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: transparent;
+}
+.helpflip p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 0 9px 0;
+    color: #878787;
+}
+.shippingflip{
+    color:#ffffff;
+    text-align: left;
+    line-height: 2;  
+}
+.shippingflip h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;    
+}
+.shippingflip h1:hover{
+    text-decoration: underline;
+}
+.shippingflip h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.shippingflip h2:hover{
+    text-decoration: underline;
+}
+.shippingflip h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.shippingflip h3:hover{
+    text-decoration: underline;
+}
+.shippingflip h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.shippingflip h4:hover{
+    text-decoration: underline;
+}
+.shippingflip h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.shippingflip h5:hover{
+    text-decoration: underline;
+}
+.policyflip{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: transparent;
+}
+.policyflip p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 0 9px 0;
+    color: #878787;
+}
+.securityflip{
+    color:#ffffff;
+    text-align: left;
+    line-height: 2;
+}
+.securityflip h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;    
+}
+.securityflip h1:hover{
+    text-decoration: underline;
+}
+.securityflip h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.securityflip h2:hover{
+    text-decoration: underline;
+}
+.securityflip h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.securityflip h3:hover{
+    text-decoration: underline;
+}
+.securityflip h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.securityflip h4:hover{
+    text-decoration: underline;
+}
+.securityflip h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.securityflip h5:hover{
+    text-decoration: underline;
+}
+.securityflip h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.securityflip h6:hover{
+    text-decoration: underline;
+}
+.socialflip{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: transparent;
+}
+.socialflip p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 0 9px 0;
+    color: #878787;
+}
+.facebookflip{
+    color:#ffffff;
+    text-align: left;
+    line-height: 2;
+}
+.facebookflip h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;    
+}
+.facebookflip h1:hover{
+    text-decoration: underline;
+}
+.facebookflip h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.facebookflip h2:hover{
+    text-decoration: underline;
+}
+.facebookflip h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.facebookflip h3:hover{
+    text-decoration: underline;
+}
+
+.detailspart2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color:transparent;
+    display: grid;
+    grid-template-columns: 1px 1.2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:1px;
+}
+.verticleline{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 133px; 
+    background-color: #717171;
+}
+.mailusflip{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: transparent;
+    padding: 0 25px 0 25px;
+}
+.mailusflip h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 0 9px 0;
+    color: #878787; 
+}
+.karindia{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #ffffff;
+    line-height: 1.3;
+}
+.officeaddress{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: transparent;
+    margin: 0 0 10px;
+    padding: 0 0 0 14px;
+}
+.officeaddress h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 0 9px 0;
+    color: #878787; 
+}
+.telephone{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #ffffff;
+    line-height: 1.3; 
+}
+.financeflip{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #1c263b;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.1fr 1.2fr 2fr 4.2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 38px;
+    padding: 25px 56px 25px 56px;
+}
+.sellflip{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color:transparent;
+    display: flex;
+}
+.sellflip img{
+    width: 16px;
+    height:16px;
+}
+.sellflip h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 0 8px;
+    color: #ffffff;
+}
+.advertiseflip{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: transparent;
+    display: flex;
+}
+.advertiseflip img{
+    width: 16px;
+    height:16px;
+}
+.advertiseflip h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 0 8px;
+    color: #ffffff;
+}
+.giftcardsflip{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: transparent;
+    display: flex;
+}
+.giftcardsflip img{
+    width: 16px;
+    height:16px;
+}
+.giftcardsflip h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 0 8px;
+    color: #ffffff;
+}
+.helpcenterflip{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: transparent;
+    display: flex;
+}
+.helpcenterflip img{
+    width: 16px;
+    height:16px;
+}
+.helpcenterflip h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 0 8px;
+    color: #ffffff;
+}
+.copyrightflip{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    background-color: transparent;
+    display: flex;
+}
+.copyrightflip h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 0 8px;
+    color: #ffffff;
+}
+.financeimage{
+    grid-column: 6/7;
+    grid-row: 1/2;
+    background-color: transparent;
+}
+.financeimage img{
+    width: 100%;
+    height: auto;
+}
+
+
